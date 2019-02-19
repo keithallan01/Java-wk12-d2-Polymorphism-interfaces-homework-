@@ -2,16 +2,19 @@ package stall;
 
 import org.junit.Before;
 import org.junit.Test;
+import visitor.Visitor;
 
 import static org.junit.Assert.assertEquals;
 
 public class TobaccoStallTest {
 
     TobaccoStall tobaccoStall;
+    Visitor visitor;
 
     @Before
     public void before() {
         tobaccoStall = new TobaccoStall("Up In Smoke", "Ciggy McGraw", 43);
+        visitor = new Visitor("Bruce Willis", 50, 1.83, 50);
     }
 
     @Test
@@ -27,5 +30,10 @@ public class TobaccoStallTest {
     @Test
     public void hasParkingSpotNumber(){
         assertEquals(43, tobaccoStall.getParkingSpot());
+    }
+
+    @Test
+    public void canBuyCigs(){
+        assertEquals(true, tobaccoStall.isAllowedTo(visitor));
     }
 }
