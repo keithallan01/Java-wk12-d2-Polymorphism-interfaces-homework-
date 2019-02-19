@@ -13,7 +13,7 @@ public class PlaygroundTest {
     @Before
     public void before(){
         playground = new Playground("The Sandbox");
-        visitor = new Visitor("Bruce Willis", 14, 1.83, 50);
+        visitor = new Visitor("Bruce Willis", 34, 1.83, 50);
     }
 
     @Test

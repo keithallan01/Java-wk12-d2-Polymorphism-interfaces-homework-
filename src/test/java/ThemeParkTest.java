@@ -43,7 +43,10 @@ public class ThemeParkTest {
 //        assertEquals()
 //    }
 
-
+    @Test
+    public void hasListOfReviews(){
+        assertEquals(0, themePark.getAllReviewed().size());
+    }
 
 
 

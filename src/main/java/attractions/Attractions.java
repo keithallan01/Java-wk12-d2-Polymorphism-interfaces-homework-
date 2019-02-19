@@ -1,7 +1,10 @@
 package attractions;
 
-public abstract class Attractions {
+import attractions.IReviewed;
+
+public abstract class Attractions implements IReviewed{
     private String name;
+    private int rating;
 
     public Attractions(String name){
         this.name = name;
@@ -9,5 +12,9 @@ public abstract class Attractions {
 
     public String getName() {
         return name;
+    }
+
+    public int getRating(){
+        return rating;
     }
 }

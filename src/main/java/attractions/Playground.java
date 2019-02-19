@@ -3,7 +3,7 @@ package attractions;
 import stall.ISecurity;
 import visitor.Visitor;
 
-public class Playground extends Attractions implements ISecurity {
+public class Playground extends Attractions implements ISecurity, IReviewed {
 
     public Playground(String name) {
         super(name);

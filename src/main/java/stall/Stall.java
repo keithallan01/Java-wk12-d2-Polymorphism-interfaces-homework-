@@ -1,9 +1,12 @@
 package stall;
 
-public abstract class Stall {
+import attractions.IReviewed;
+
+public abstract class Stall implements IReviewed {
     private String name;
     private String owner;
     private int parkingSpot;
+    private int rating;
 
     public Stall(String name, String owner, int parkingSpot){
         this.name = name;
@@ -21,5 +24,9 @@ public abstract class Stall {
 
     public int getParkingSpot() {
         return parkingSpot;
+    }
+
+    public int getRating(){
+        return rating;
     }
 }

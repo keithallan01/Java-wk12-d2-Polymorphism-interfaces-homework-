@@ -4,6 +4,8 @@ import stall.IceCreamStall;
 import stall.TobaccoStall;
 import visitor.Visitor;
 
+import java.util.ArrayList;
+
 public class ThemePark {
 
     private String name;
@@ -15,6 +17,7 @@ public class ThemePark {
     private TobaccoStall tobaccoStall;
     private IceCreamStall iceCreamStall;
     private Visitor visitor;
+    private ArrayList<IReviewed> reviewed;
 
     public ThemePark(String name, Dodgems dodgems, Park park, Rollercoaster rollercoaster, Playground playground, CandyFlossStall candyFlossStall, TobaccoStall tobaccoStall, IceCreamStall iceCreamStall, Visitor visitor){
         this.name = name;
@@ -26,6 +29,7 @@ public class ThemePark {
         this.tobaccoStall = tobaccoStall;
         this.iceCreamStall = iceCreamStall;
         this.visitor = visitor;
+        this.reviewed = new ArrayList<>();
     }
 
     public String getName() {
@@ -62,5 +66,9 @@ public class ThemePark {
 
     public Visitor getVisitor() {
         return visitor;
+    }
+
+    public ArrayList<IReviewed> getAllReviewed(){
+        return this.reviewed;
     }
 }
