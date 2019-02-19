@@ -36,4 +36,9 @@ public class TobaccoStallTest {
     public void canBuyCigs(){
         assertEquals(true, tobaccoStall.isAllowedTo(visitor));
     }
+
+    @Test
+    public void hasDefaultPrice(){
+        assertEquals(6.60, tobaccoStall.defaultPrice(), 0.01);
+    }
 }
