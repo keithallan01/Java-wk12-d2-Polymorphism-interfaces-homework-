@@ -1,5 +1,8 @@
+package visitorTest;
+
 import org.junit.Before;
 import org.junit.Test;
+import visitor.Visitor;
 
 import static org.junit.Assert.assertEquals;
 

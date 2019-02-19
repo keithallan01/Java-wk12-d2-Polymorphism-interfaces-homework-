@@ -4,6 +4,7 @@ import org.junit.Test;
 import stall.CandyFlossStall;
 import stall.IceCreamStall;
 import stall.TobaccoStall;
+import visitor.Visitor;
 
 import static org.junit.Assert.assertEquals;
 

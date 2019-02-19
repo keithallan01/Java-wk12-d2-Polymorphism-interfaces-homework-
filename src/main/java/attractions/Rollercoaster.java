@@ -1,6 +1,7 @@
 package attractions;
 
-import sun.reflect.generics.visitor.Visitor;
+
+import visitor.Visitor;
 
 public class Rollercoaster extends Attractions implements ITicketed{
 
@@ -9,11 +10,11 @@ public class Rollercoaster extends Attractions implements ITicketed{
     }
 
     public double defaultPrice(){
-        return 5.50;
+        return 6;
     }
 
     public double priceFor(Visitor visitor){
-        return 0;
+        return 6;
     }
 
 }

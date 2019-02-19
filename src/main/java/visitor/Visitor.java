@@ -1,3 +1,5 @@
+package visitor;
+
 public class Visitor {
 
     private String name;
@@ -27,4 +29,5 @@ public class Visitor {
     public double getMoney() {
         return money;
     }
+
 }

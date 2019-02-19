@@ -2,8 +2,7 @@ import attractions.*;
 import stall.CandyFlossStall;
 import stall.IceCreamStall;
 import stall.TobaccoStall;
-
-import java.awt.*;
+import visitor.Visitor;
 
 public class ThemePark {
 

@@ -1,6 +1,7 @@
 package attractions;
 
-import sun.reflect.generics.visitor.Visitor;
+
+import visitor.Visitor;
 
 public class Dodgems extends Attractions implements ITicketed {
 
