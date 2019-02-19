@@ -1,4 +1,8 @@
 package attractions;
 
-public class Dodgems {
+public class Dodgems extends Attractions{
+
+    public Dodgems(String name) {
+        super(name);
+    }
 }
